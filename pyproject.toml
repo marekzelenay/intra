@@ -15,7 +15,7 @@ websockets = "^13.1"
 croniter = "^5.0.1"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.1.1"
+pytest = "^8.4.2"
 
 [build-system]
 requires = ["poetry-core"]
