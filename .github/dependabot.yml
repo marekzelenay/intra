@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      time: "12:00" # UTC
+    reviewers:
+      - pmikh
+      - powerbot-mk
+  - package-ecosystem: "pip"
+    schedule:
+      interval: "weekly"
+      time: "12:00" # UTC
+    directory: /
+    reviewers:
+      - pmikh
+      - powerbot-mk

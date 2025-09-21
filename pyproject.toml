@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "algorithm_base_class"
+version = "1.18.2"
+description = "PowerBot Base Class for Algorithm development"
+authors = ["PowerBot <support@powerbot-trading.com>"]
+readme = "README.md"
+packages = [{include = "algorithm_base_class", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+powerbot-asyncio-client = "2.23.0"
+ecs-logging = "^2.2.0"
+stomper = "^0.4.3"
+websockets = "^13.1"
+croniter = "^5.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 150
+
+[tool.flake8]
+ignore = ["C901", "W503", "E203"]
+max-line-length = 150
+max-complexity = 10

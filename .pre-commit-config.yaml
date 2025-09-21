@@ -1,0 +1,35 @@
+default_language_version:
+    python: python3
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    -   id: end-of-file-fixer  # ensures that a file is either empty, or ends with one newline
+    -   id: trailing-whitespace  # trims trailing whitespace
+    -   id: check-toml  # checks toml files for parseable syntax
+- repo: https://github.com/PyCQA/isort  # sort imports
+  rev: '5.12.0'
+  hooks:
+  - id: isort
+    args: ["--profile", "black"]
+-   repo: https://github.com/psf/black  # autoformat
+    rev: '24.8.0'
+    hooks:
+    -   id: black
+-   repo: https://github.com/pycqa/flake8  # flake8
+    rev: 7.0.0
+    hooks:
+    -   id: flake8
+        entry: pflake8
+        additional_dependencies: [flake8-bugbear, pyproject-flake8]
+- repo: https://github.com/codespell-project/codespell  # typos, misspelling
+  rev: v2.2.2
+  hooks:
+    - id: codespell
+- repo: https://github.com/PyCQA/pydocstyle  # docstring style format
+  rev: 6.3.0
+  hooks:
+    -   id: pydocstyle
+        args:
+          # Google convention + Missing docstring in public module + Missing docstring in public package
+          - --ignore=D203, D204, D213, D215, D400, D401, D404, D406, D407, D408, D409, D413, D100, D104, E203
