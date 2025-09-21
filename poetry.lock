@@ -515,14 +515,14 @@ testing = ["coverage", "pytest", "pytest-benchmark"]
 
 [[package]]
 name = "powerbot-asyncio-client"
-version = "2.23.0"
+version = "2.24.1"
 description = "PowerBot Asyncio Client"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "powerbot_asyncio_client-2.23.0-py3-none-any.whl", hash = "sha256:5c00f354546e2412c1a7a4c7889a08905cb58167103c309b595c348ac60e2a4d"},
-    {file = "powerbot_asyncio_client-2.23.0.tar.gz", hash = "sha256:cc6b771c2f27c2ed392b76a22d08da751994d62774efc7e2ca7cab7bd1208faf"},
+    {file = "powerbot_asyncio_client-2.24.1-py3-none-any.whl", hash = "sha256:8750fbce37855288387b48fe3ec80e79036fa265408c7525c81007483a103800"},
+    {file = "powerbot_asyncio_client-2.24.1.tar.gz", hash = "sha256:098ed3b0bf59eedcee2202f4217550f14f1213f42023b4c568d509e0b6f41e6a"},
 ]
 
 [package.dependencies]
@@ -980,4 +980,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.11"
-content-hash = "8fd132f4901c26b4db6fea371c7035f7d0eb8723be6aa80703da43ed6d767556"
+content-hash = "3671015e144e88389fca94334914a9d858e070eb92f6a8afa97815aaee7f4c16"
