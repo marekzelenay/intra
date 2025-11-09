@@ -12,7 +12,7 @@ powerbot-asyncio-client = "2.23.0"
 ecs-logging = "^2.2.0"
 stomper = "^0.4.3"
 websockets = "^13.1"
-croniter = "^5.0.1"
+croniter = "^6.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.1.1"
