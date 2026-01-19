@@ -9,7 +9,7 @@ packages = [{include = "algorithm_base_class", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 powerbot-asyncio-client = "2.23.0"
-ecs-logging = "^2.2.0"
+ecs-logging = "^2.3.0"
 stomper = "^0.4.3"
 websockets = "^13.1"
 croniter = "^5.0.1"
